@@ -1,0 +1,24 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+  <property>
+    <name>mapreduce.application.classpath</name>
+    <value>${symbol_dollar}HADOOP_MAPRED_HOME/*,${symbol_dollar}HADOOP_MAPRED_HOME/lib/*</value>
+  </property>
+  <!--
+    - The following property allows to run MR jobs cross-platformly.
+    - It means that jobs created on Windows MR client can be run on Linux cluster or vice versa.
+    -
+    -->
+  <property>
+    <name>mapreduce.app-submission.cross-platform</name>
+    <value>true</value>
+  </property>
+</configuration>

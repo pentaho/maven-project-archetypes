@@ -1,0 +1,9 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+  <configuration>
+	<property>
+      <name>fs.azure.account.key.privateazure.blob.core.windows.net</name>
+      <value>Unencrypted value</value>
+    </property>
+  </configuration>

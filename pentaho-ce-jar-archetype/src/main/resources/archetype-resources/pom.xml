@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+  <packaging>jar</packaging>
+
+  <parent>
+    <groupId>org.pentaho</groupId>
+    <artifactId>pentaho-ce-jar-parent-pom</artifactId>
+    <!-- specific versions set upon migration to maintenance -->
+    <version>RELEASE</version>
+  </parent>
+
+  <name>Pentaho Community Edition Project: ${artifactId}</name>
+  <description>a Pentaho sponsored open source project</description>
+  <url>http://www.pentaho.org</url>
+
+  <!--
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  -->
+
+  <!--
+  <developers>
+    <developer>
+      <name>YOU</name>
+      <email>YOUR_EMAIL</email>
+      <roles>
+        <role>creator</role>
+      </roles>
+    </developer>
+  </developers>
+   -->
+
+  <properties>
+     <slf4j.version>1.7.21</slf4j.version>
+  </properties>
+
+  <!-- TODO: ensure this matches your actual github repo location -->
+  <scm>
+    <developerConnection>scm:git:git@github.com:pentaho/${project.artifactId}.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <dependencies>
+    <!-- 'COMPILE' SCOPED DEPS -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+
+    <!-- 'RUNTIME' SCOPED DEPS -->
+
+    <!-- 'PROVIDED' SCOPED DEPS -->
+
+    <!-- 'TEST' SCOPED DEPS -->
+
+  </dependencies>
+
+</project>

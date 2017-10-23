@@ -1,0 +1,35 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<assembly>
+  <id>plugin</id>
+  <baseDirectory>${shimName}</baseDirectory>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <fileSets>
+    <fileSet>
+      <directory>${symbol_dollar}{basedir}/src/main/resources</directory>
+      <outputDirectory>/</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>${symbol_dollar}{oss.license.directory}</directory>
+      <outputDirectory>/</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>${symbol_dollar}{project.build.directory}/${shimName}</directory>
+      <outputDirectory>/</outputDirectory>
+    </fileSet>
+  </fileSets>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>/</outputDirectory>
+      <useTransitiveDependencies>false</useTransitiveDependencies>
+      <useTransitiveFiltering>false</useTransitiveFiltering>
+      <includes>
+        <include>${groupId}:pentaho-hadoop-shims-${shimName}</include>
+        <include>${groupId}:pentaho-hadoop-shims-${shimName}-hbase-comparators</include> 
+      </includes>
+    </dependencySet>
+  </dependencySets>
+</assembly>
