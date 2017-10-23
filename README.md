@@ -1,0 +1,1 @@
+# maven-project-archetypes
