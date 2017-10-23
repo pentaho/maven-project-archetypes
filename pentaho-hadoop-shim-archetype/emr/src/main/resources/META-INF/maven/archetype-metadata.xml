@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="pentaho-hadoop-shims-emr56-reactor">
+  <requiredProperties>
+    <requiredProperty key="packageName">
+      <defaultValue>org.pentaho.hadoop.shim.${shimName}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="shimVersion">
+      
+    </requiredProperty>
+    <requiredProperty key="shimName">
+      <defaultValue>emr56</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="artifactId">
+      <defaultValue>${shimName}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="groupId">
+      <defaultValue>org.pentaho</defaultValue>
+    </requiredProperty>
+</requiredProperties>
+  <modules>
+    <module id="pentaho-hadoop-shims-emr-scope-client" dir="client" name="pentaho-hadoop-shims-emr-scope-client" />
+    <module id="pentaho-hadoop-shims-emr-scope-pmr" dir="pmr" name="pentaho-hadoop-shims-emr-scope-pmr" />
+    <module id="pentaho-hadoop-shims-emr-scope-default" dir="default" name="pentaho-hadoop-shims-emr-scope-default" />
+    <module id="pentaho-hadoop-shims-emr" dir="impl" name="pentaho-hadoop-shims-emr">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.NoOpHadoopAuthorizationService</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="pentaho-hadoop-shims-emr-hbase-comparators" dir="hbase-comparators" name="pentaho-hadoop-shims-emr-hbase-comparators" />
+    <module id="pentaho-hadoop-shims-emr-assemblies-reactor" dir="assemblies" name="pentaho-hadoop-shims-emr-assemblies-reactor">
+      <modules>
+        <module id="pentaho-hadoop-shims-emr-scope-client-assembly" dir="client" name="pentaho-hadoop-shims-emr-scope-client-assembly">
+          <fileSets>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/assembly</directory>
+              <includes>
+                <include>**/*.xml</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="pentaho-hadoop-shims-emr-scope-pmr-assembly" dir="pmr" name="pentaho-hadoop-shims-emr-scope-pmr-assembly">
+          <fileSets>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/assembly</directory>
+              <includes>
+                <include>**/*.xml</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="pentaho-hadoop-shims-emr-scope-default-assembly" dir="default" name="pentaho-hadoop-shims-emr-scope-default-assembly">
+          <fileSets>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/assembly</directory>
+              <includes>
+                <include>**/*.xml</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="pentaho-hadoop-shims-emr-package" dir="__shimName__-shim" name="pentaho-hadoop-shims-emr-package">
+          <fileSets>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.xml</include>
+                <include>**/*.properties</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/assembly</directory>
+              <includes>
+                <include>**/*.xml</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+      </modules>
+    </module>
+  </modules>
+</archetype-descriptor>

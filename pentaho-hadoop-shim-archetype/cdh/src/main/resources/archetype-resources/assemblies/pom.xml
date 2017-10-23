@@ -1,0 +1,20 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>${groupId}</groupId>
+    <artifactId>pentaho-hadoop-shims-${shimName}-reactor</artifactId>
+    <version>${version}</version>
+  </parent>
+  <artifactId>pentaho-hadoop-shims-${shimName}-assemblies-reactor</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>client</module>
+    <module>pmr</module>
+    <module>default</module>
+    <module>${shimName}-shim</module>
+  </modules>
+</project>
