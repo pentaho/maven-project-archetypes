@@ -8,7 +8,7 @@
   </parent>
 
   <artifactId>cdh-archetype</artifactId>
-  <version>1.17</version>
+  <version>1.18-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>Pentaho Community Edition CDH Shim Java Project Archetype</name>
@@ -16,7 +16,7 @@
   
   <scm>
     <developerConnection>scm:git:git@github.com:pentaho/maven-project-archetypes.git</developerConnection>
-    <tag>cdh-archetype-1.17</tag>
+    <tag>HEAD</tag>
   </scm>
 
 </project>
