@@ -3,7 +3,7 @@
 
   <groupId>org.pentaho</groupId>
   <artifactId>pentaho-ce-jar-archetype</artifactId>
-  <version>1.0.24-SNAPSHOT</version>
+  <version>1.0.24</version>
   <packaging>jar</packaging>
 
   <parent>
@@ -37,7 +37,7 @@
 
   <scm>
     <developerConnection>scm:git:git@github.com:pentaho/maven-project-archetypes.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>pentaho-ce-jar-archetype-1.0.24</tag>
   </scm>
 
   <properties>
