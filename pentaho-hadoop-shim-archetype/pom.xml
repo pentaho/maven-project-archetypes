@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>hadoop-shim-archetype-ce</artifactId>
-  <version>1.18</version>
+  <version>1.19-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -30,7 +30,7 @@
 
   <scm>
     <developerConnection>scm:git:git@github.com:pentaho/maven-project-archetypes.git</developerConnection>
-    <tag>hadoop-shim-archetype-ce-1.18</tag>
+    <tag>HEAD</tag>
   </scm>
   
   <licenses>
