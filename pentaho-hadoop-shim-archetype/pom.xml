@@ -8,6 +8,7 @@
     <version>RELEASE</version>
   </parent>
 
+  <groupId>org.pentaho.hadoop.shim</groupId>
   <artifactId>hadoop-shim-archetype-ce</artifactId>
   <version>1.19-SNAPSHOT</version>
   <packaging>pom</packaging>
