@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>${groupId}</groupId>
+    <artifactId>${rootArtifactId}</artifactId>
+    <version>${version}</version>
+  </parent>
+
+  <artifactId>${artifactId}</artifactId>
+  <packaging>bundle</packaging>
+
+  <name>${plugin_name} UI</name>
+
+  <properties>
+    <org.eclipse.swt.version>4.6</org.eclipse.swt.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>pentaho-kettle</groupId>
+      <artifactId>kettle-core</artifactId>
+      <version>${kettle.version}</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>pentaho-kettle</groupId>
+      <artifactId>kettle-engine</artifactId>
+      <version>${kettle.version}</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>pentaho-kettle</groupId>
+      <artifactId>kettle-ui-swt</artifactId>
+      <version>${kettle.version}</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>pentaho</groupId>
+      <artifactId>metastore</artifactId>
+      <version>${kettle.version}</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <!-- SWT it required to compile any version of any architecture will work -->
+    <dependency>
+      <groupId>org.eclipse.swt</groupId>
+      <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+      <version>${org.eclipse.swt.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+
+    <dependency>
+      <groupId>${groupId}</groupId>
+      <artifactId>${rootArtifactId}-impl</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>${package}.ui.trans.steps.${rootArtifactId},${rootArtifactId}.ui.images</Export-Package>
+            <Import-Package>${package}.trans.steps.${rootArtifactId},*</Import-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
