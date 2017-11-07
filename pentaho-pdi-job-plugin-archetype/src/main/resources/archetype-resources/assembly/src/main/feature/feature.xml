@@ -1,0 +1,11 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="pentaho-${symbol_dollar}{project.artifactId}-${symbol_dollar}{project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+
+  <feature name='pentaho-${symbol_dollar}{project.artifactId}' description='${symbol_dollar}{project.description}'>
+    <details>${plugin_description}</details>
+  </feature>
+
+</features>
