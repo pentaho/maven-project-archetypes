@@ -13,4 +13,4 @@ It will create the basic folder structure, provide you with a template README.md
 * [pdi-job-plugin-archetype](pentaho-pdi-job-plugin-archetype)
 * [hadoop-shim-archetype-ce](pentaho-hadoop-shim-archetype)
 
-Further information regarding standards and development guidelides can be found [here]((/pentaho/pentaho-coding-standards/wiki)).
+Further information regarding standards and development guidelides can be found [here](https://github.com/pentaho/pentaho-coding-standards/wiki).
