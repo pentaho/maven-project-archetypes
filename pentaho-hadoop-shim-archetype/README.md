@@ -1,10 +1,8 @@
-# pentaho-hadoop-shim-archetype #
+## Pentaho Hadoop Shim Archetype
+
 A project archetype for creating the structure of a new shim project within the Pentaho ecosystem.
 
-
-
-
-#### Creation of Community Edition (ce) shims from archetypes
+### Creation of Community Edition (ce) shims from archetypes
 
 To create ce shims from archetypes please use the following commands:
 
@@ -33,11 +31,3 @@ mvn archetype:generate -B -DarchetypeGroupId=org.pentaho.hadoop.shim -Darchetype
 mvn archetype:generate -B -DarchetypeGroupId=org.pentaho.hadoop.shim -DarchetypeArtifactId=mapr-archetype -DarchetypeVersion=1.0 -Dversion=8.0-SNAPSHOT -DshimName=mapr530 -DshimVersion=5.3.x
 ```
 *where emr56 etc - new name for shim, 5.6.x etc - human readable version used in config.properties*
-
-
-
-__IntelliJ__
-
-* Don't use IntelliJ's built-in maven. Make it use the same one you use from the commandline.
-  * Project Preferences -> Build, Execution, Deployment -> Build Tools -> Maven ==> Maven home directory
-````

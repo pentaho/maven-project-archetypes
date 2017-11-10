@@ -1,7 +1,0 @@
-.idea
-*.iml
-.project
-target
-pom.xml.releaseBackup
-release.properties
-.DS_Store
