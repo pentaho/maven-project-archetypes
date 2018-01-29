@@ -41,5 +41,6 @@
     <module>pentaho-hadoop-shim-archetype</module>
     <module>pentaho-pdi-job-plugin-archetype</module>
     <module>pentaho-pdi-step-plugin-archetype</module>
+    <module>pentaho-streaming-step-plugin-archetype</module>
   </modules>
 </project>
