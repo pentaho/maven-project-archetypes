@@ -5,6 +5,10 @@
 
 <configuration>
   <property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>clouderamanager.cdh5.test</value>
+  </property>
+  <property>
     <name>yarn.application.classpath</name>
     <value>${symbol_dollar}HADOOP_CONF_DIR,${symbol_dollar}HADOOP_COMMON_HOME/*,${symbol_dollar}HADOOP_COMMON_HOME/lib/*,${symbol_dollar}HADOOP_HDFS_HOME/*,${symbol_dollar}HADOOP_HDFS_HOME/lib/*,${symbol_dollar}HADOOP_YARN_HOME/*,${symbol_dollar}HADOOP_YARN_HOME/lib/*</value>
   </property>

@@ -5,7 +5,7 @@
  *
  * Pentaho Big Data
  *
- * Copyright (C) 2002-2017 by Pentaho : http://www.pentaho.com
+ * Copyright (C) 2002-2018 by Hitachi Vantara : http://www.pentaho.com
  *
  *******************************************************************************
  *
@@ -106,11 +106,14 @@ public class HadoopShim extends CommonHadoopShim {
       Thread.currentThread().setContextClassLoader( cl );
     }
     ShimUtils.asConfiguration( result ).addResource( "hbase-site.xml" );
+    ShimUtils.asConfiguration( result ).set( "sqoop.hbase.security.token.skip", "true" );
+
     return result;
   }
 
   @Override
   public void onLoad( HadoopConfiguration config, HadoopConfigurationFileSystemManager fsm ) throws Exception {
+    validateHadoopHomeWithWinutils();
     fsm.addProvider( config, MapRFileProvider.SCHEME, config.getIdentifier(), new MapRFileProvider() );
     setDistributedCacheUtil( new MapR5DistributedCacheUtilImpl( config ) );
   }

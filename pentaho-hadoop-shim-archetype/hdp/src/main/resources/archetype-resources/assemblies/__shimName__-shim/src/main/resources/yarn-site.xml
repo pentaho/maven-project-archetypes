@@ -22,6 +22,14 @@
   </property>
 
   <!--
+    - This property specifies the hostname for the YARN ResourceManager of your cluster/sandbox. Update this property accordingly
+    -->
+  <property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>sandbox.hortonworks.com</value>
+  </property>
+
+  <!--
     - This property specifies the hostname:port value for the YARN ResourceManager of your cluster/sandbox. Update this property accordingly
     -->
   <property>

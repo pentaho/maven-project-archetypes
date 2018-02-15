@@ -5,7 +5,7 @@
  *
  * Pentaho Data Integration
  *
- * Copyright (C) 2002-2017 by Pentaho : http://www.pentaho.com
+ * Copyright (C) 2002-2018 by Hitachi Vantara : http://www.pentaho.com
  *
  *******************************************************************************
  *
@@ -25,7 +25,7 @@
 package ${groupId}.hadoop.shim.${shimName}.invocationhandler;
 
 /**
- * User: Dzmitry Stsiapanau Date: 01/17/2017 Time: 15:14
+ * User: Dzmitry Stsiapanau Date: 01/17/2018 Time: 15:14
  */
 
 import ${groupId}.hadoop.shim.common.HiveSQLUtils;

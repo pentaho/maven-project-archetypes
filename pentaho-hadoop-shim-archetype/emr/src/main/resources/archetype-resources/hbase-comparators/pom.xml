@@ -55,7 +55,9 @@
                   <classifier>sources</classifier>
                   <overWrite>false</overWrite>
                   <outputDirectory>${symbol_dollar}{project.build.directory}/src</outputDirectory>
-                  <includes>**/IDeserializedBooleanComparator.java,**/IDeserializedNumericComparator.java</includes>
+                  <includes>
+                    **/IDeserializedBooleanComparator.java,**/IDeserializedNumericComparator.java
+                  </includes>
                 </artifactItem>
                 <artifactItem>
                   <groupId>${groupId}</groupId>
@@ -63,7 +65,9 @@
                   <classifier>sources</classifier>
                   <overWrite>false</overWrite>
                   <outputDirectory>${symbol_dollar}{project.build.directory}/src</outputDirectory>
-                  <includes>**/DeserializedBooleanComparator.java,**/DeserializedNumericComparator.java</includes>
+                  <includes>
+                    **/DeserializedBooleanComparator.java,**/DeserializedNumericComparator.java
+                  </includes>
                 </artifactItem>
                 <artifactItem>
                   <groupId>${groupId}</groupId>

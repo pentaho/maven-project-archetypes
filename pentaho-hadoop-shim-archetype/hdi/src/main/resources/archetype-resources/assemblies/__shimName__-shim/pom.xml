@@ -25,19 +25,19 @@
     </dependency>
     <dependency>
       <groupId>${groupId}</groupId>
-      <artifactId>pentaho-hadoop-shims-${shimName}-scope-client-assembly</artifactId>
+      <artifactId>pentaho-hadoop-shims-${shimName}-scope-client</artifactId>
       <version>${symbol_dollar}{project.version}</version>
       <type>zip</type>
     </dependency>
     <dependency>
       <groupId>${groupId}</groupId>
-      <artifactId>pentaho-hadoop-shims-${shimName}-scope-pmr-assembly</artifactId>
+      <artifactId>pentaho-hadoop-shims-${shimName}-scope-pmr</artifactId>
       <version>${symbol_dollar}{project.version}</version>
       <type>zip</type>
     </dependency>
     <dependency>
       <groupId>${groupId}</groupId>
-      <artifactId>pentaho-hadoop-shims-${shimName}-scope-default-assembly</artifactId>
+      <artifactId>pentaho-hadoop-shims-${shimName}-scope-default</artifactId>
       <version>${symbol_dollar}{project.version}</version>
       <type>zip</type>
     </dependency>
@@ -93,21 +93,21 @@
                 </artifactItem>
                 <artifactItem>
                   <groupId>${groupId}</groupId>
-                  <artifactId>pentaho-hadoop-shims-${symbol_dollar}{shim.name}-scope-pmr-assembly</artifactId>
+                  <artifactId>pentaho-hadoop-shims-${symbol_dollar}{shim.name}-scope-pmr</artifactId>
                   <type>zip</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${symbol_dollar}{project.build.directory}/</outputDirectory>
                 </artifactItem>
                 <artifactItem>
                   <groupId>${groupId}</groupId>
-                  <artifactId>pentaho-hadoop-shims-${symbol_dollar}{shim.name}-scope-client-assembly</artifactId>
+                  <artifactId>pentaho-hadoop-shims-${symbol_dollar}{shim.name}-scope-client</artifactId>
                   <type>zip</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${symbol_dollar}{project.build.directory}/</outputDirectory>
                 </artifactItem>
                 <artifactItem>
                   <groupId>${groupId}</groupId>
-                  <artifactId>pentaho-hadoop-shims-${symbol_dollar}{shim.name}-scope-default-assembly</artifactId>
+                  <artifactId>pentaho-hadoop-shims-${symbol_dollar}{shim.name}-scope-default</artifactId>
                   <type>zip</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${symbol_dollar}{project.build.directory}/</outputDirectory>

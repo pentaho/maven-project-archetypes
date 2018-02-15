@@ -17,6 +17,7 @@
     <log4j.version>1.2.14</log4j.version>
     <xstream.version>1.4.9</xstream.version>
     <commons-collections.version>3.2.2</commons-collections.version>
+    <shim.type>CDH</shim.type>
   </properties>
   <dependencies>
     <dependency>
@@ -105,6 +106,15 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>**/PentahoOrcReadWriteTest.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
       </plugin>
@@ -131,6 +141,43 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.igormaznitsa</groupId>
+        <artifactId>jcp</artifactId>
+        <version>${symbol_dollar}{com.igormaznitsa.jcp.version}</version>
+        <executions>
+          <execution>
+            <id>preprocessSources</id>
+            <phase>process-sources</phase>
+            <goals>
+              <goal>preprocess</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>preprocessTests</id>
+            <phase>process-test-sources</phase>
+            <goals>
+              <goal>preprocessTests</goal>
+            </goals>
+            <configuration>
+              <useTestSources>true</useTestSources>
+              <source>${symbol_dollar}{project.build.directory}/test-src</source>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <globalVars>
+            <property>
+              <name>shim_type</name>
+              <value>${symbol_dollar}{shim.type}</value>
+            </property>
+            <property>
+              <name>shim_name</name>
+              <value>${symbol_dollar}{shim.name}</value>
+            </property>
+          </globalVars>
+        </configuration>
       </plugin>
     </plugins>
   </build>

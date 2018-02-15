@@ -5,7 +5,7 @@
  *
  * Pentaho Big Data
  *
- * Copyright (C) 2002-2017 by Pentaho : http://www.pentaho.com
+ * Copyright (C) 2002-2018 by Hitachi Vantara : http://www.pentaho.com
  *
  *******************************************************************************
  *
@@ -34,13 +34,16 @@ import ${groupId}.hadoop.shim.${shimName}.HadoopShim;
 
 public class ShimNoOpHadoopAuthorizationService extends NoOpHadoopAuthorizationService {
 
-  @Override protected CommonHadoopShim getHadoopShim() {
+  @Override
+  protected CommonHadoopShim getHadoopShim() {
     return new HadoopShim();
   }
 
-  @Override protected CommonPigShim getPigShim() {
+  @Override
+  protected CommonPigShim getPigShim() {
     return new PigShimImpl() {
-      @Override public boolean isLocalExecutionSupported() {
+      @Override
+      public boolean isLocalExecutionSupported() {
         return false;
       }
     };

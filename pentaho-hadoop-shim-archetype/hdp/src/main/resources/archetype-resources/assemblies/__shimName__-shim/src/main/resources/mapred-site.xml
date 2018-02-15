@@ -49,4 +49,12 @@
     <value>true</value>
   </property>
 
+  <!--
+    - This property specifies the hostname:port value for the MapReduce JobHistory Server of your cluster/sandbox. Update this property accordingly
+    -->
+  <property>
+    <name>mapreduce.jobhistory.address</name>
+    <value>sandbox.hortonworks.com:10020</value>
+  </property>
+
 </configuration>

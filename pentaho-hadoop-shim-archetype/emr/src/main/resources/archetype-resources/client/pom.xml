@@ -15,6 +15,17 @@
   <packaging>pom</packaging>
   <dependencies>
     <dependency>
+      <groupId>org.xerial.snappy</groupId>
+      <artifactId>snappy-java</artifactId>
+      <version>${symbol_dollar}{org.xerial.snappy.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>dk.brics.automaton</groupId>
       <artifactId>automaton</artifactId>
       <version>${symbol_dollar}{automaton.version}</version>
@@ -34,22 +45,10 @@
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-auth</artifactId>
       <version>${symbol_dollar}{org.apache.hadoop.version}</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.zookeeper</groupId>
       <artifactId>zookeeper</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>org.slf4j</groupId>
-          <artifactId>slf4j-log4j12</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.hadoop</groupId>
@@ -87,4 +86,26 @@
       <version>${symbol_dollar}{org.apache.hadoop.version}</version>
     </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>pkg</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <descriptors>
+            <descriptor>${symbol_dollar}{project.basedir}/src/assembly/assembly.xml</descriptor>
+          </descriptors>
+          <appendAssemblyId>false</appendAssemblyId>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

@@ -5,7 +5,7 @@
  *
  * Pentaho Big Data
  *
- * Copyright (C) 2002-2017 by Pentaho : http://www.pentaho.com
+ * Copyright (C) 2002-2018 by Hitachi Vantara : http://www.pentaho.com
  *
  *******************************************************************************
  *
@@ -48,7 +48,8 @@ public class HadoopShim extends HadoopShimImpl {
     }
   }
 
-  @Override public ${groupId}.hadoop.shim.api.fs.FileSystem getFileSystem(
+  @Override
+  public ${groupId}.hadoop.shim.api.fs.FileSystem getFileSystem(
     ${groupId}.hadoop.shim.api.Configuration conf ) throws IOException {
     // Set the context class loader when instantiating the configuration
     // since org.apache.hadoop.conf.Configuration uses it to load resources
