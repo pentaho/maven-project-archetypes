@@ -2,26 +2,26 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 /*******************************************************************************
-*
-* Pentaho Big Data
-*
-* Copyright (C) 2002-2017 by Pentaho : http://www.pentaho.com
-*
-*******************************************************************************
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with
-* the License. You may obtain a copy of the License at
-*
-*    http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*
-******************************************************************************/
+ *
+ * Pentaho Big Data
+ *
+ * Copyright (C) 2002-2018 by Hitachi Vantara : http://www.pentaho.com
+ *
+ *******************************************************************************
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ ******************************************************************************/
 
 package org.apache.hadoop.hive.jdbc;
 
@@ -34,17 +34,15 @@ import java.util.Properties;
 import java.util.logging.Logger;
 
 /**
- * Mimics HiveServer1 JDBC driver
- * The class is introduced to satisfy shims-common dependencies.
- *
+ * Mimics HiveServer1 JDBC driver The class is introduced to satisfy shims-common dependencies.
  */
 public class HiveDriver implements Driver {
   private static final String SQL_STATE_NOT_SUPPORTED = "0A000";
 
   public HiveDriver() throws SQLException {
     throw new SQLException(
-        "Currently active Hadoop shim does not support the HiveServer1 JDBC driver",
-        SQL_STATE_NOT_SUPPORTED );
+      "Currently active Hadoop shim does not support the HiveServer1 JDBC driver",
+      SQL_STATE_NOT_SUPPORTED );
   }
 
   @Override

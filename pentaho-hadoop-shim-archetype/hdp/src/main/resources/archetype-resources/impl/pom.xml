@@ -15,6 +15,7 @@
   <version>${version}</version>
   <properties>
     <xstream.version>1.4.9</xstream.version>
+    <shim.type>HDP</shim.type>
   </properties>
   <dependencies>
     <dependency>
@@ -39,6 +40,16 @@
       <artifactId>pentaho-hadoop-shims-${shimName}-scope-default</artifactId>
       <version>${symbol_dollar}{project.version}</version>
       <type>pom</type>
+    </dependency>
+	<dependency>
+      <groupId>org.apache.avro</groupId>
+      <artifactId>avro</artifactId>
+      <version>${symbol_dollar}{org.apache.avro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.orc</groupId>
+      <artifactId>orc-core</artifactId>
+      <version>${symbol_dollar}{org.apache.orc.version}</version>
     </dependency>
     <!--here test dependencies-->
     <dependency>
@@ -122,6 +133,32 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.igormaznitsa</groupId>
+        <artifactId>jcp</artifactId>
+        <version>${symbol_dollar}{com.igormaznitsa.jcp.version}</version>
+        <executions>
+          <execution>
+            <id>preprocessSources</id>
+            <phase>process-sources</phase>
+            <goals>
+              <goal>preprocess</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <globalVars>
+            <property>
+              <name>shim_type</name>
+              <value>${symbol_dollar}{shim.type}</value>
+            </property>
+            <property>
+              <name>shim_name</name>
+              <value>${symbol_dollar}{shim.name}</value>
+            </property>
+          </globalVars>
+        </configuration>
       </plugin>
     </plugins>
   </build>

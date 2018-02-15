@@ -18,9 +18,36 @@
     </requiredProperty>
 </requiredProperties>
   <modules>
-    <module id="pentaho-hadoop-shims-hdi-scope-client" dir="client" name="pentaho-hadoop-shims-hdi-scope-client" />
-    <module id="pentaho-hadoop-shims-hdi-scope-pmr" dir="pmr" name="pentaho-hadoop-shims-hdi-scope-pmr" />
-    <module id="pentaho-hadoop-shims-hdi-scope-default" dir="default" name="pentaho-hadoop-shims-hdi-scope-default" />
+    <module id="pentaho-hadoop-shims-hdi-scope-client" dir="client" name="pentaho-hadoop-shims-hdi-scope-client">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/assembly</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="pentaho-hadoop-shims-hdi-scope-pmr" dir="pmr" name="pentaho-hadoop-shims-hdi-scope-pmr">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/assembly</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="pentaho-hadoop-shims-hdi-scope-default" dir="default" name="pentaho-hadoop-shims-hdi-scope-default">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/assembly</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
     <module id="pentaho-hadoop-shims-hdi" dir="impl" name="pentaho-hadoop-shims-hdi">
       <fileSets>
         <fileSet filtered="true" encoding="UTF-8">
@@ -40,36 +67,6 @@
     <module id="pentaho-hadoop-shims-hdi-hbase-comparators" dir="hbase-comparators" name="pentaho-hadoop-shims-hdi-hbase-comparators" />
     <module id="pentaho-hadoop-shims-hdi-assemblies-reactor" dir="assemblies" name="pentaho-hadoop-shims-hdi-assemblies-reactor">
       <modules>
-        <module id="pentaho-hadoop-shims-hdi-scope-client-assembly" dir="client" name="pentaho-hadoop-shims-hdi-scope-client-assembly">
-          <fileSets>
-            <fileSet filtered="true" encoding="UTF-8">
-              <directory>src/assembly</directory>
-              <includes>
-                <include>**/*.xml</include>
-              </includes>
-            </fileSet>
-          </fileSets>
-        </module>
-        <module id="pentaho-hadoop-shims-hdi-scope-pmr-assembly" dir="pmr" name="pentaho-hadoop-shims-hdi-scope-pmr-assembly">
-          <fileSets>
-            <fileSet filtered="true" encoding="UTF-8">
-              <directory>src/assembly</directory>
-              <includes>
-                <include>**/*.xml</include>
-              </includes>
-            </fileSet>
-          </fileSets>
-        </module>
-        <module id="pentaho-hadoop-shims-hdi-scope-default-assembly" dir="default" name="pentaho-hadoop-shims-hdi-scope-default-assembly">
-          <fileSets>
-            <fileSet filtered="true" encoding="UTF-8">
-              <directory>src/assembly</directory>
-              <includes>
-                <include>**/*.xml</include>
-              </includes>
-            </fileSet>
-          </fileSets>
-        </module>
         <module id="pentaho-hadoop-shims-hdi-package" dir="__shimName__-shim" name="pentaho-hadoop-shims-hdi-package">
           <fileSets>
             <fileSet filtered="true" encoding="UTF-8">

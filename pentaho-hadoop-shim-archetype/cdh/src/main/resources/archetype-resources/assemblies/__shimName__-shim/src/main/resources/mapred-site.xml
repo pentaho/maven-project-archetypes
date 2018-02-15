@@ -12,6 +12,11 @@
     <name>mapreduce.application.classpath</name>
     <value>${symbol_dollar}HADOOP_MAPRED_HOME/*,${symbol_dollar}HADOOP_MAPRED_HOME/lib/*</value>
   </property>
+  <property>
+    <name>mapreduce.jobhistory.address</name>
+    <value>clouderamanager.cdh5.test:10020</value>
+    <description>MapReduce JobHistory Server IPC host:port</description>
+  </property>
   <!--
     - The following property allows to run MR jobs cross-platformly.
     - It means that jobs created on Windows MR client can be run on Linux cluster or vice versa.
