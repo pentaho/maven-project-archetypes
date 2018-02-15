@@ -8,7 +8,7 @@
   </parent>
 
   <artifactId>emr-archetype</artifactId>
-  <version>1.18</version>
+  <version>1.19-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>Pentaho Community Edition EMR Shim Java Project Archetype</name>
@@ -16,7 +16,7 @@
   
   <scm>
     <developerConnection>scm:git:git@github.com:pentaho/maven-project-archetypes.git</developerConnection>
-    <tag>emr-archetype-1.18</tag>
+    <tag>HEAD</tag>
   </scm>
 
 </project>
