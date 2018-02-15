@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>hdi-archetype</artifactId>
-  <version>1.18-SNAPSHOT</version>
+  <version>1.18</version>
   <packaging>maven-archetype</packaging>
 
   <name>Pentaho Community Edition HDI Shim Java Project Archetype</name>
@@ -17,7 +17,7 @@
   
   <scm>
     <developerConnection>scm:git:git@github.com:pentaho/maven-project-archetypes.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>hdi-archetype-1.18</tag>
   </scm>
 
 </project>
