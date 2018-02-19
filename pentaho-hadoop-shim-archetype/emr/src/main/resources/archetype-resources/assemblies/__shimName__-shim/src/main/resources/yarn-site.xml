@@ -1,0 +1,23 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+  <property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>amazon.emr.test</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>amazon.emr.test:8032</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.admin.address</name>
+    <value>amazon.emr.test:8033</value>
+  </property>
+  <property>
+    <name>yarn.application.classpath</name>
+    <value>${symbol_dollar}HADOOP_CLIENT_CONF_DIR,${symbol_dollar}HADOOP_CONF_DIR,${symbol_dollar}HADOOP_COMMON_HOME/*,${symbol_dollar}HADOOP_COMMON_HOME/lib/*,${symbol_dollar}HADOOP_HDFS_HOME/*,${symbol_dollar}HADOOP_HDFS_HOME/lib/*,${symbol_dollar}HADOOP_YARN_HOME/*,${symbol_dollar}HADOOP_YARN_HOME/lib/*</value>
+  </property>
+</configuration>
