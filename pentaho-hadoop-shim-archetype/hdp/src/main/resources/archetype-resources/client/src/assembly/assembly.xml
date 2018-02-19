@@ -1,0 +1,28 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+  <id>plugin</id>
+  <baseDirectory>${shimName}</baseDirectory>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>lib/client</outputDirectory>
+      <useTransitiveDependencies>true</useTransitiveDependencies>
+      <useTransitiveFiltering>true</useTransitiveFiltering>
+      <includes>
+	    <include>org.xerial.snappy:snappy-java</include>
+        <include>org.apache.hadoop:hadoop-client</include>
+      </includes>
+      <excludes>
+        <exclude>xml-apis:xml-apis</exclude>
+        <exclude>xerces:xercesImpl</exclude>
+        <exclude>commons-collections:*</exclude>
+        <exclude>*:tests:*</exclude>
+      </excludes>
+    </dependencySet>
+  </dependencySets>
+</assembly>
