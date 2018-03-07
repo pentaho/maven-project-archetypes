@@ -7,7 +7,7 @@ The pdi-step-plugin-archetype can be used as a basis for any Pentaho Data Integr
 mvn archetype:generate \
  -DarchetypeGroupId=org.pentaho \
  -DarchetypeArtifactId=pdi-step-plugin-archetype \
- -DarchetypeVersion=2.19 \
+ -DarchetypeVersion=2.20 \
  -DgroupId=com.my.company \
  -DartifactId=my-step-plugin \
  -Dversion=1.0-SNAPSHOT \
