@@ -24,7 +24,7 @@
     <parent>
     	<groupId>org.pentaho</groupId>
     	<artifactId>pentaho-ce-bundle-parent-pom</artifactId>
-    	<version>RELEASE</version>
+    	<version>${project.version}</version>
   	</parent>
 
     <groupId>${groupId}</groupId>
