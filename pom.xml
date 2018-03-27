@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.pentaho</groupId>
+    <artifactId>pentaho-ce-jar-parent-pom</artifactId>
+    <version>8.1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>maven-project-archetypes</artifactId>
+  <version>8.1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <developers>
+    <developer>
+      <name>Pentaho BDC Team</name>
+      <email>bdconform.pentaho@hitachivantara.com</email>
+      <roles>
+        <role>creator</role>
+        <role>maintainer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <scm>
+    <developerConnection>scm:git:git@github.com:pentaho/maven-project-archetypes.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <properties>
+    <archetype-packaging.version>2.4</archetype-packaging.version>
+    <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
+    <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
+    <maven-archetype-plugin.version>2.4</maven-archetype-plugin.version>
+  </properties>
+
+  <modules>
+    <module>pentaho-ce-bundle-archetype</module>
+    <module>pentaho-ce-jar-archetype</module>
+    <module>pentaho-hadoop-shim-archetype</module>
+    <module>pentaho-pdi-job-plugin-archetype</module>
+    <module>pentaho-pdi-step-plugin-archetype</module>
+  </modules>
+</project>

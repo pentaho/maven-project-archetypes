@@ -9,7 +9,7 @@ The pentaho-ce-bundle-archetype can be used as a basis for any project (or even 
 $ mvn archetype:generate                               \
      -DarchetypeGroupId=org.pentaho                    \
      -DarchetypeArtifactId=pentaho-ce-bundle-archetype \
-     -DarchetypeVersion=1.0.18                          \
+     -DarchetypeVersion=8.1.0.0-SNAPSHOT                \
      -DgroupId=org.pentaho                             \
      -DartifactId=my-pentaho-project                   \
      -Dversion=1.0-SNAPSHOT                          \
