@@ -7,8 +7,9 @@ The streaming-step-plugin-archetype can be used as a basis for any Pentaho Data 
 mvn archetype:generate \
  -DarchetypeGroupId=org.pentaho \
  -DarchetypeArtifactId=streaming-step-plugin-archetype \
- -DarchetypeVersion=2.20 \
+ -DarchetypeVersion=8.2.0.0-SNAPSHOT \
  -DgroupId=com.my.company \
+ -Dpackage=com.my.company.project.package
  -DartifactId=my-step-plugin \
  -Dversion=1.0-SNAPSHOT \
  -Dplugin_class_name=MyStep \
