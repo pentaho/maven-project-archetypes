@@ -7,13 +7,13 @@ The pentaho-ce-jar-archetype can be used as a basis for any project (or even sub
 ### Example Usage
 ```
 $ mvn archetype:generate                              \
-     -DarchetypeGroupId=org.pentaho                   \
+     -DarchetypeGroupId=org.hitachivantara.archetypes \
      -DarchetypeArtifactId=pentaho-ce-jar-archetype   \
-     -DarchetypeVersion=1.0.24                         \
-     -DgroupId=org.pentaho                            \
+     -DarchetypeVersion=9.0.0.0-SNAPSHOT              \
+     -DgroupId=org.hitachivantara                     \
      -DartifactId=my-pentaho-project                  \
-     -Dversion=1.0-SNAPSHOT                         \
-     -Dpackage=org.pentaho.my.project
+     -Dversion=1.0-SNAPSHOT                           \
+     -Dpackage=org.hitachivantara.my.project
      
 $ cd my-pentaho-project
 
@@ -33,7 +33,7 @@ my-pentaho-project/
     ├── main
     │   ├── java
     │   │   └── org
-    │   │       └── pentaho
+    │   │       └── hitachivantara
     │   │           └── my
     │   │               └── project
     │   │                   └── MyClass.java
@@ -41,7 +41,7 @@ my-pentaho-project/
     └── test
         ├── java
         │   └── org
-        │       └── pentaho
+        │       └── hitachivantara
         │           └── my
         │               └── project
         │                   └── MyClassTest.java

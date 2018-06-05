@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.pentaho.hadoop.shim</groupId>
+    <groupId>org.hitachivantara.hadoop.shim</groupId>
     <artifactId>hadoop-shim-archetype-ce</artifactId>
     <version>9.0.0.0-SNAPSHOT</version>
   </parent>
