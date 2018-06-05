@@ -4,16 +4,16 @@ The streaming-step-plugin-archetype can be used as a basis for any Pentaho Data 
 
 ### Example Usage
 ```
-mvn archetype:generate \
- -DarchetypeGroupId=org.pentaho \
+mvn archetype:generate                                 \
+ -DarchetypeGroupId=org.hitachivantara.archetypes      \
  -DarchetypeArtifactId=streaming-step-plugin-archetype \
- -DarchetypeVersion=8.2.0.0-SNAPSHOT \
- -DgroupId=com.my.company \
- -Dpackage=com.my.company.project.package
- -DartifactId=my-step-plugin \
- -Dversion=1.0-SNAPSHOT \
- -Dplugin_class_name=MyStep \
- -Dplugin_name="My Step" \
+ -DarchetypeVersion=9.0.0.0-SNAPSHOT                   \
+ -DgroupId=com.my.company                              \
+ -Dpackage=com.my.company.project.package              \
+ -DartifactId=my-step-plugin                           \
+ -Dversion=1.0-SNAPSHOT                                \
+ -Dplugin_class_name=MyStep                            \
+ -Dplugin_name="My Step"                               \
  -Dplugin_description="This is what my step does."
  
 $ cd my-step-plugin

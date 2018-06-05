@@ -4,16 +4,16 @@ The pdi-step-plugin-archetype can be used as a basis for any Pentaho Data Integr
 
 ### Example Usage
 ```
-mvn archetype:generate \
- -DarchetypeGroupId=org.pentaho \
- -DarchetypeArtifactId=pdi-step-plugin-archetype \
- -DarchetypeVersion=2.20 \
- -DgroupId=com.my.company \
- -DartifactId=my-step-plugin \
- -Dversion=1.0-SNAPSHOT \
- -Dplugin_class_name=MyStep \
- -Dplugin_name="My Step" \
- -Dplugin_category=Transform \
+mvn archetype:generate                            \
+ -DarchetypeGroupId=org.hitachivantara.archetypes \
+ -DarchetypeArtifactId=pdi-step-plugin-archetype  \
+ -DarchetypeVersion=9.0.0.0-SNAPSHOT              \
+ -DgroupId=com.my.company                         \
+ -DartifactId=my-step-plugin                      \
+ -Dversion=1.0-SNAPSHOT                           \
+ -Dplugin_class_name=MyStep                       \
+ -Dplugin_name="My Step"                          \
+ -Dplugin_category=Transform                      \
  -Dplugin_description="This is what my step does."
  
 $ cd my-step-plugin

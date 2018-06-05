@@ -13,9 +13,9 @@
   <version>${version}</version>
   <packaging>bundle</packaging>
 
-  <name>Pentaho Community Edition Project: ${artifactId}</name>
-  <description>a Pentaho sponsored open source project</description>
-  <url>http://www.pentaho.org</url>
+  <name>Hitachi Vantara Community Edition Project: ${artifactId}</name>
+  <description>a Hitachi Vantara sponsored open source project</description>
+  <url>http://www.hitachivantara.org</url>
 
   <!--
   <licenses>

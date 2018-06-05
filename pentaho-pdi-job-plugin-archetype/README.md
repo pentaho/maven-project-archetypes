@@ -4,16 +4,16 @@ The pentaho-pdi-job-plugin-archetype can be used as a basis for any Pentaho Data
 
 ### Example Usage
 ```
-mvn archetype:generate \
- -DarchetypeGroupId=org.pentaho \
- -DarchetypeArtifactId=pdi-job-plugin-archetype \
- -DarchetypeVersion=2.20 \
- -DgroupId=com.my.company \
- -DartifactId=my-job-plugin \
- -Dversion=1.0-SNAPSHOT \
- -Dplugin_class_name=MyJob \
- -Dplugin_name="My Job" \
- -Dplugin_category=General \
+mvn archetype:generate                            \
+ -DarchetypeGroupId=org.hitachivantara.archetypes \
+ -DarchetypeArtifactId=pdi-job-plugin-archetype   \
+ -DarchetypeVersion=9.0.0.0-SNAPSHOT              \
+ -DgroupId=com.my.company                         \
+ -DartifactId=my-job-plugin                       \
+ -Dversion=1.0-SNAPSHOT                           \
+ -Dplugin_class_name=MyJob                        \
+ -Dplugin_name="My Job"                           \
+ -Dplugin_category=General                        \
  -Dplugin_description="This is what my job does."
  
 $ cd my-job-plugin

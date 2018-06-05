@@ -4,7 +4,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <requiredProperties>
     <requiredProperty key="kettleVersion">
-      <defaultValue>7.0.0.3-62</defaultValue>
+      <defaultValue>9.0.0.0-SNAPSHOT</defaultValue>
     </requiredProperty>
     <requiredProperty key="plugin_class_name" />
     <requiredProperty key="plugin_name" />
