@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>pentaho-ce-bundle-archetype</artifactId>
-  <version>8.1.0.0-SNAPSHOT</version>
+  <version>8.1.0.5-646</version>
   <packaging>jar</packaging>
 
   <parent>
     <groupId>org.pentaho</groupId>
     <artifactId>maven-project-archetypes</artifactId>
-    <version>8.1.0.0-SNAPSHOT</version>
+    <version>8.1.0.5-646</version>
   </parent>
 
   <name>Pentaho Community Edition Bundle Project Archetype</name>
