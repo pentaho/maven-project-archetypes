@@ -2,10 +2,10 @@
 <archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="pdi-step-plugin"
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <id>pdi-step-plugin-archetype</id>
+  <id>pdi-osgi-step-plugin-archetype</id>
   <requiredProperties>
     <requiredProperty key="kettleVersion">
-      <defaultValue>8.3.0.0-SNAPSHOT</defaultValue>
+      <defaultValue>9.0.0.0-SNAPSHOT</defaultValue>
     </requiredProperty>
     <requiredProperty key="plugin_class_name" />
     <requiredProperty key="plugin_name" />

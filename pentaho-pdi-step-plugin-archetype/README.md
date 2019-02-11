@@ -41,20 +41,14 @@ my-step-plugin/
     │   │               └── MyStepStepAnalyzer.java
     │   └── resources
     │       ├── MyStep.svg
-    │       ├── OSGI-INF
-    │       │   └── blueprint
-    │       │       └── blueprint.xml
-    │       ├── com
-    │       │   └── my
-    │       │       └── company
-    │       │           └── messages
-    │       │               └── messages_en_US.properties
-    │       └── my-step-plugin-feature.xml
+    │       └── com
+    │           └── my
+    │              └── company
+    │                   └── messages
+    │                       └── messages_en_US.properties
     └── test
         └── java
             └── com
                 └── my
                     └── company
 ```
-
-To deploy copy the generated "my-step-plugin-1.0-SNAPSHOT.kar" into "data-integration\system\karaf\deploy"
