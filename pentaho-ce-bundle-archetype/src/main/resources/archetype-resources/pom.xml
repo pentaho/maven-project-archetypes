@@ -39,10 +39,6 @@
   </developers>
    -->
 
-  <properties>
-    <slf4j.version>1.7.21</slf4j.version>
-  </properties>
-
   <!-- TODO: ensure this matches your actual github repo location -->
   <scm>
     <developerConnection>scm:git:git@github.com:pentaho/${project.artifactId}.git</developerConnection>
@@ -54,7 +50,6 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>${slf4j.version}</version>
     </dependency>
 
     <!-- 'RUNTIME' SCOPED DEPS -->
