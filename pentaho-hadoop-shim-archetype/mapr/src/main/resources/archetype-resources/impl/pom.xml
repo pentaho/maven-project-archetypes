@@ -14,7 +14,6 @@
   <packaging>jar</packaging>
   <version>${version}</version>
   <properties>
-    <log4j.version>1.2.15</log4j.version>
     <xstream.version>1.4.9</xstream.version>
     <maprfs.version>6.0.0-mapr</maprfs.version>
     <commons-configuration.version>1.6</commons-configuration.version>
@@ -70,7 +69,6 @@
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
-      <version>${symbol_dollar}{log4j.version}</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
