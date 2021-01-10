@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>pdi-step-plugin-archetype</artifactId>
-  <version>9.2.0.0-SNAPSHOT</version>
+  <version>9.2.0.0-175</version>
   <packaging>maven-archetype</packaging>
 
   <parent>
     <groupId>org.hitachivantara.archetypes</groupId>
     <artifactId>maven-project-archetypes</artifactId>
-    <version>9.2.0.0-SNAPSHOT</version>
+    <version>9.2.0.0-175</version>
   </parent>
 
   <name>Pentaho Community Edition Step Plugin Archetype</name>
