@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.hitachivantara.hadoop.shim</groupId>
     <artifactId>hadoop-shim-archetype-ce</artifactId>
-    <version>9.2.0.0-SNAPSHOT</version>
+    <version>9.2.0.2-384</version>
   </parent>
 
   <artifactId>mapr-archetype</artifactId>
-  <version>9.2.0.0-SNAPSHOT</version>
+  <version>9.2.0.2-384</version>
   <packaging>maven-archetype</packaging>
 
   <name>Pentaho Community Edition MapR Shim Java Project Archetype</name>
