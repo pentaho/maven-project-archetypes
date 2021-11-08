@@ -4,11 +4,11 @@
   <parent>
     <groupId>org.hitachivantara.hadoop.shim</groupId>
     <artifactId>hadoop-shim-archetype-ce</artifactId>
-    <version>9.3.0.0-SNAPSHOT</version>
+    <version>9.3.0.0-244</version>
   </parent>
 
   <artifactId>emr-archetype</artifactId>
-  <version>9.3.0.0-SNAPSHOT</version>
+  <version>9.3.0.0-244</version>
   <packaging>maven-archetype</packaging>
 
   <name>Pentaho Community Edition EMR Shim Java Project Archetype</name>
