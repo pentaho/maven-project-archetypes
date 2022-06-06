@@ -15,7 +15,6 @@
   <version>${version}</version>
   <properties>
     <xstream.version>1.4.9</xstream.version>
-    <commons-io.version>2.4</commons-io.version>
     <shim.type>HDI</shim.type>
   </properties>
   <dependencies>
