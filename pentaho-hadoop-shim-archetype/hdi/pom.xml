@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.hitachivantara.hadoop.shim</groupId>
     <artifactId>hadoop-shim-archetype-ce</artifactId>
-    <version>9.4.0.0-SNAPSHOT</version>
+    <version>9.4.0.0-93</version>
   </parent>
 
   <artifactId>hdi-archetype</artifactId>
-  <version>9.4.0.0-SNAPSHOT</version>
+  <version>9.4.0.0-93</version>
   <packaging>maven-archetype</packaging>
 
   <name>Pentaho Community Edition HDI Shim Java Project Archetype</name>
