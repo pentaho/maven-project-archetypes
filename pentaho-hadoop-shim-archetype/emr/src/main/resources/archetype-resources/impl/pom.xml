@@ -14,7 +14,6 @@
   <packaging>jar</packaging>
   <version>${version}</version>
   <properties>
-    <xstream.version>1.4.9</xstream.version>
     <shim.type>EMR</shim.type>
   </properties>
   <dependencies>
