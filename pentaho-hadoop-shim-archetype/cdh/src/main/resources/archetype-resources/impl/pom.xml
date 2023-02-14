@@ -14,7 +14,6 @@
   <packaging>jar</packaging>
   <version>${version}</version>
   <properties>
-    <xstream.version>1.4.9</xstream.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <shim.type>CDH</shim.type>
   </properties>
