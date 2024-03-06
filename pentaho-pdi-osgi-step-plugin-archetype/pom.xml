@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>pdi-osgi-step-plugin-archetype</artifactId>
-  <version>10.2.0.0-SNAPSHOT</version>
+  <version>10.2.0.0-53</version>
   <packaging>maven-archetype</packaging>
 
   <parent>
     <groupId>org.hitachivantara.archetypes</groupId>
     <artifactId>maven-project-archetypes</artifactId>
-    <version>10.2.0.0-SNAPSHOT</version>
+    <version>10.2.0.0-53</version>
   </parent>
 
   <name>Pentaho Community Edition OSGI Step Plugin Archetype</name>
