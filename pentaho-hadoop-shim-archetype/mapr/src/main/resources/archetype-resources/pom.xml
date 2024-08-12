@@ -24,7 +24,6 @@
         <pig.version>0.16.0-mapr-1703</pig.version>
         <dependency.pig.classifier>h2</dependency.pig.classifier>
         <org.apache.oozie.version>4.3.0-mapr-1710</org.apache.oozie.version>
-        <org.apache.thrift.version>0.9.3</org.apache.thrift.version>
         <sqoop.version>1.4.6-mapr-1710</sqoop.version>
         <org.apache.sqoop.connector.version>1.1-mapr-1707</org.apache.sqoop.connector.version>
         <org.apache.avro.version>1.8.0</org.apache.avro.version>
