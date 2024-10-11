@@ -78,14 +78,6 @@
             <configuration>
               <artifactItems>
                 <artifactItem>
-                  <groupId>pentaho</groupId>
-                  <artifactId>oss-licenses</artifactId>
-                  <type>zip</type>
-                  <overWrite>false</overWrite>
-                  <outputDirectory>${symbol_dollar}{oss.license.directory}</outputDirectory>
-                  <includes>*${symbol_dollar}{shim.name}*</includes>
-                </artifactItem>
-                <artifactItem>
                   <groupId>${groupId}</groupId>
                   <artifactId>pentaho-hadoop-shims-${symbol_dollar}{shim.name}-scope-pmr</artifactId>
                   <type>zip</type>
