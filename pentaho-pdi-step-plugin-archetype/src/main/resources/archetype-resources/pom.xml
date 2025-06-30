@@ -52,7 +52,6 @@
     <dependency.pentaho-metaverse-api>${kettleVersion}</dependency.pentaho-metaverse-api>
     <!-- Plugin dependencies -->
     <target.jdk.version>1.7</target.jdk.version>
-    <plugin.maven-bundle-plugin.version>2.5.3</plugin.maven-bundle-plugin.version>
     <plugin.maven-compiler-plugin.version>3.1</plugin.maven-compiler-plugin.version>
     <mockito.version>1.9.5</mockito.version>
     <junit.version>4.4</junit.version>
