@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>streaming-step-plugin-archetype</artifactId>
-  <version>11.0.0.0-196</version>
+  <version>11.0.0.0-latest</version>
   <packaging>maven-archetype</packaging>
 
   <parent>
     <groupId>org.hitachivantara.archetypes</groupId>
     <artifactId>maven-project-archetypes</artifactId>
-    <version>11.0.0.0-196</version>
+    <version>11.0.0.0-latest</version>
   </parent>
 
   <name>PDI streaming step plugin archetype</name>
