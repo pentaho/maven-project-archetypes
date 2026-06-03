@@ -21,7 +21,6 @@
         <include>org.apache.hbase:hbase-hadoop-compat</include>
         <include>org.apache.hbase:hbase-protocol</include>
         <include>org.apache.hbase:hbase-server</include>
-        <include>net.sf.flexjson:flexjson</include>
       </includes>
       <excludes>
         <exclude>*:tests:*</exclude>
