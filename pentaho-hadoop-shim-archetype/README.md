@@ -1,6 +1,6 @@
-## Hitachi Vantara Hadoop Shim Archetype
+## Pentaho Hadoop Shim Archetype
 
-A project archetype for creating the structure of a new shim project within the Hitachi Vantara ecosystem.
+A project archetype for creating the structure of a new shim project within the Pentaho ecosystem.
 
 ### Creation of Community Edition (ce) shims from archetypes
 
